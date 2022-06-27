@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exclusiva Tour</title>
+
+<!-- Google fonts Lato -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+<!-- CSS only -->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+ <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" >
+
+ <!-- CSS do projeto -->
+     <link rel="stylesheet" href="styles.css" >
+   
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+  
+
+    <!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <div class="container-fluid">
+  	 <img id="img1" src="img/viagem (2)" style="margin: 9px;">  
+    <a class="navbar-brand" href="#" >Exclusiva Tour</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+	
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Viagens</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#">Promoções</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+	<!-- SLIDER -->
+	<div class="container" id="slider-container">
+		<div class="carousel slide" id="slider" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					class="active"
+					data-bs-target="#slider"
+					data-bs-slide-to="0"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#slider"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#slider"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>	
+			</div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner7.png" class="d-block w-100" alt="banner1" width="700px" height="700px" /> 
+            <div class="carousel-caption">
+              <h5>Viagens Planejadas</h5>
+              <a href="#" class="btn btn-dark">Agendar Viagem</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner9.png" class="d-block w-100" alt="banner2" width="700px" height="700px"/>
+            <div class="carousel-caption">
+              <h5>Viagens Completas</h5>
+              <a href="#" class="btn btn-dark">Agendar Viagem</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/barcelona4.png" class="d-block w-100" alt="banner3" width="700px" height="700px" />
+            <div class="carousel-caption">
+              <h5>Viagens Inovadoras</h5>
+              <a href="#" class="btn btn-dark">Agendar Viagem</a>
+		</div>	
+	</div>
+	<button
+		class="carousel-control-prev"
+		type="button"
+		data-bs-target="#slider"
+		data-bs-slide="prev">
+
+		<i class="bi bi-chevron-compact-left">		</i>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button
+		class="carousel-control-next"
+		type="button"
+		data-bs-target="#slider"
+		data-bs-slide="next">
+
+		<i class="bi bi bi-chevron-compact-right"></i>
+		<span class="visually-hidden">Next</span>
+</button>
+
+</div>
+<!--LINK TOPO -->
+<a id="link-topo" href="#">&#9650;</a>
+<!-- MINI BANNERS -->
+<div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+	<div class="row">
+		<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-box primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-tittle primary-color">Viagens completas</h5>
+					<p class="card-text secondary-color"></p>
+			<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viagens">
+ Saber mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="viagens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Conheça algumas das nossas viagens!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Pacote de Viagem - Praia do Francês - 2023</p>
+         <p>Pacote de Viagem - Fortaleza + Jericoacoara - 2024</p>
+        <p>Pacote de Viagem - Dubai - 2024</p>
+        <p>Pacote de Viagem - Fortaleza + Beach Park - 2022</p>
+        <p>Pacote de Viagem - Rio de Janeiro - 2022</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </a>
+          <div class="modal fade" id="voce" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Entre em contato!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Mensagem:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3 form-check">
+            
+                      
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ok</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="adiantamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Informe sobre sua viagem.</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Nome Completo:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Cpf:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Código da sua reserva:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3 form-check">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ok</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+   
+</div>
+</div>
+</div>
+<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-layers primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-tittle primary-color">Você participa também</h5>
+          <p class="card-text secondary-color"></p>
+          <div	<!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#voce">
+              Saber mais
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa2" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body2">
+                    <p>Modal body text goes here.</p>
+
+            <div class="modal-dialog modal-dialog-scrollable">
+            </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-4">
+			<div class="card text-center">
+				<i class="bi bi-lightning-charge primary-color"></i>
+				<div class="card-body">
+					<h5 class="card-tittle primary-color">Adiantamento das viagens</h5>
+					<p class="card-text secondary-color"></p>
+          <div	<!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adiantamento">
+              Saber mais
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa3" tabindex="-3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body3">
+                    <!-- Scrollable modal -->
+            <div class="modal-dialog modal-dialog-scrollable">
+            </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DESTAQUES -->
+<div class="container" id="featured-container">
+	<div class="col-12">
+		<h2 class="title primary-color">Tipos de Acomodações</h2>
+		<p class="subtittle secondary-color">Conheça algumas das nossas acomodações!</p>
+</div>
+<div class="col-12" id="featured-iamges"></div>
+<div class="row g-4">
+		<div class="col-12 col-md-4">
+			<img id="serra3" src="img/hotel.png" alt="Projeto 1"  width="400px" height="700px" >
+			<div class="banner-content">
+				<h3>Hotéis</h3>					
+</div>
+</div>
+		<div class="col-12 col-md-4">
+			<img id="serra3" src="img/chale.png" alt="Projeto 3" width="400px" height="700px">
+			<div class="banner-content">
+       
+
+				<h3>Chalés</h3>				
+</div>		
+</div>
+		<div class="col-12 col-md-4">
+			<img id="serra3" src="img/casadepraia.png" alt="Projeto 3" width="400px" height="700px">
+			<div class="banner-content">
+				<h3>Casas de Praia</h3>				
+</div>		
+</div>
+<div class="col-12 col-md-4">
+  <img id="serra3" src="img/barco.png" alt="Projeto 3" width="400px" height="700px">
+  <div class="banner-content">
+    <h3>Cruzeiros</h3>				
+</div>
+</div>
+<div class="col-12 col-md-4">
+  <img id="serra3" src="img/hoteisfazenda.png" alt="Projeto 3" width="400px" height="700px">
+  <div class="banner-content">
+    <h3>Hotéis em Fazendas</h3>				
+    </div>			
+    </div>
+    <div class="col-12 col-md-4">
+      <img id="serra3" src="img/casadehospedes" alt="Projeto 3" width="400px" height="700px">
+      <div class="banner-content">
+        <h3>Casas de hóspedes</h3>	
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<!-- INFO -->
+ <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Detalhes Importantes</h2>
+        <p class="subtitle secondary-color">
+          Saiba mais sobre a experiência da nossa incrível equipe
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img src="img/infobannerr.png" alt="Informações da Empresa" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title">Estes dados fazem a diferença:</h2>
+                <p class="subtitle secondary-color">
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">0</h3>
+                    <p class="secondary-color">Anos da Empresa</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">0</h3>
+                    <p class="secondary-color">Viagens executadas</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">0</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- FOOTER -->
+       <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+          <div class="row">
+            <!-- FOOTER TOP -->
+            <div class="col-12" id="footer-top">
+              <div class="row justify-content-between">
+                <div class="col-4">
+                  <h2>
+                    Exclusiva Tour
+                  </h2>
+                </div>
+                <div class="col-4" id="social-icons">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-youtube"></i>
+                  <i class="bi bi-twitter"></i>
+                </div>
+              </div>
+            </div>
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+              <div class="row">
+                <div class="col-12 col-md-4" id="news-container">
+                  <h4>Fique por dentro das novidades</h4>
+                  <p class="secondary-color">
+                    Inscreva-se 
+                  </p>
+                  <form>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Digite o seu e-mail"
+                      />
+                    </div>
+                    <button class="btn btn-dark">Inscrever</button>
+                  </form>
+                </div>
+                <div class="col-12 col-md-4" id="contact-container">
+                  <h4>Formas de contato</h4>
+                  <p class="secondary-color">(88)99999-9999</p>
+                  <p class="secondary-color">livia8alencar@gmail.com</p>
+                  <p class="secondary-color">renatolimadumontehs@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-4" id="links-container">
+                  <div class="row">
+                    <h4>Você pode estar buscando por:</h4>
+                    <div class="col-6">
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="secondary-color">Pacotes</a></li>
+                        <li><a href="#" class="secondary-color">Preços</a></li>
+                        <li><a href="#" class="secondary-color">Destinos</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="secondary-color">Contratar</a></li>
+                        <li>
+                          <a href="#" class="secondary-color">Trabalhe conosco</a>
+                        </li>
+                        <li><a href="#" class="secondary-color">Contato</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="col-12" id="footer-bottom">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-3">
+                  <p class="secondary-color">Exclusiva Tour &copy; 2022</p>
+                </div>
+                <div class="col-12 col-md-3">
+                  <p class="secondary-color">
+                    Realizamos suas viagens com
+                    <i class="bi bi-heart"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
